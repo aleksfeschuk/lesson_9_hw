@@ -1,0 +1,257 @@
+
+
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+
+
+.header {
+  background-color: #f5f5f5;
+  padding-block: 50px;
+}
+
+.nav {
+  max-width: 1390px;
+  margin-inline: auto;
+  padding-inline: 15px;
+  position: relative;
+  text-align: center;
+  height: 64px;
+}
+
+.nav__logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav__logo-img {
+  display: block;
+}
+
+.nav__center {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Search block inside nav */
+.search {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 24px;
+}
+
+.search__input {
+  display: block;
+  width: 360px;
+  height: 36px;
+  padding: 0 14px 0 36px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  font: 500 14px/36px "Lato", sans-serif;
+  color: #2f302c;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Menu */
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu__link {
+  position: relative;
+  display: inline-block;
+  margin: 0 16px;
+  padding: 8px 0;
+  font: 700 14px/1 "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #2f302c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.menu__link:hover::after,
+.menu__link--active::after {
+  background: #2f302c;
+}
+
+
+.furniture {
+  background-image: url('../img/Rectangle_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 114px 0 170px 1013px;
+  margin-left: auto;
+}
+
+.furniture__subtitle {
+  font-family: 'Lato', sans-serif;
+  color: #2F302C;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
+.furniture__title {
+  color: #2F302C;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 100px;
+  margin-bottom: 16px;
+}
+
+.furniture__title-highlight {
+  font-weight: 700;
+}
+
+.furniture__underline {
+  width: 308px;
+  height: 1px;
+  background: #2F302C;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 16px;
+}
+
+.furniture__description {
+  width: 374px;
+  font-family: "Lato", sans-serif;
+  color: #7E7F7C;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 110px;
+}
+
+
+
+.plans {
+  margin-top: -171px;
+}
+
+.plans__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plans__header {
+  margin-bottom: 40px;
+}
+
+.plans__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #2F302C;
+  margin-bottom: 12px;
+}
+
+.plans__description {
+  font-family: 'Lato', sans-serif;
+  color: #7E7F7C;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.plans__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plans__item {
+  flex: 1 1 300px;
+}
+
+
+/* PLAN CARD */
+
+.plan {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  background-color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.plan--basic {
+  border-color: #ccc;
+}
+
+.plan--standard {
+  border-color: #aaa;
+}
+
+.plan--premium {
+  border-color: #000;
+}
+
+.plan__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2F302C;
+}
+
+.plan__price {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #2F302C;
+  margin-bottom: 8px;
+}
+
+.plan__period {
+  font-family: 'Lato', sans-serif;
+  color: #7E7F7C;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__feature {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #2F302C;
+  margin-bottom: 8px;
+}
+
+.plan__feature--available::before {
+  content: "✔ ";
+  color: green;
+}
+
+.plan__feature--unavailable::before {
+  content: "✖ ";
+  color: #aaa;
+}
